@@ -1,25 +1,25 @@
-def what_is_my_sign(day, month):
+ï»¿def what_is_my_sign(day, month):
     if (month == 3 and day >= 21) or (month == 4 and day <= 20):
-        return 'Îâåí'
+        return 'ÐžÐ²ÐµÐ½'
     elif (month == 4 and day >= 21) or (month == 5 and day <= 20):
-        return 'Òåëåö'
+        return 'Ð¢ÐµÐ»ÐµÑ†'
     elif (month == 5 and day >= 21) or (month == 6 and day <= 20):
-        return 'Áëèçíàöè'
+        return 'Ð‘Ð»Ð¸Ð·Ð½Ð°Ñ†Ð¸'
     elif (month == 6 and day >= 21) or (month == 7 and day <= 21):
-        return 'Ðàê'
+        return 'Ð Ð°Ðº'
     elif (month == 7 and day >= 22) or (month == 8 and day <= 22):
-        return 'Ëúâ'
+        return 'Ð›ÑŠÐ²'
     elif (month == 8 and day >= 23) or (month == 9 and day <= 22):
-        return 'Äåâà'
+        return 'Ð”ÐµÐ²Ð°'
     elif (month == 9 and day >= 23) or (month == 10 and day <= 22):
-        return 'Âåçíè'
+        return 'Ð’ÐµÐ·Ð½Ð¸'
     elif (month == 10 and day >= 23) or (month == 11 and day <= 21):
-        return 'Ñêîðïèîí'
+        return 'Ð¡ÐºÐ¾Ñ€Ð¿Ð¸Ð¾Ð½'
     elif (month == 11 and day >= 22) or (month == 12 and day <= 21):
-        return 'Ñòðåëåö'
+        return 'Ð¡Ñ‚Ñ€ÐµÐ»ÐµÑ†'
     elif (month == 12 and day >= 22) or (month == 1 and day <= 19):
-        return 'Êîçèðîã'
+        return 'ÐšÐ¾Ð·Ð¸Ñ€Ð¾Ð³'
     elif (month == 1 and day >= 20) or (month == 2 and day <= 18):
-        return 'Âîäîëåé'
+        return 'Ð’Ð¾Ð´Ð¾Ð»ÐµÐ¹'
     else:
-        return 'Ðèáè'
+        return 'Ð Ð¸Ð±Ð¸'
