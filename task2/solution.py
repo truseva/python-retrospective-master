@@ -32,7 +32,7 @@ def cache(func, cache_size):
         return func
     cache = [(None, None)]*cache_size
 
-	def func_cached(argument):
+    def func_cached(argument):
         for cache_element in cache:
             if cache_element[0] == argument:
                 return cache_element[1]
