@@ -56,7 +56,6 @@ class Person:
                 yield grandchild
 
     def is_successor(self, other):
-        for person in self.successor():
-            if person == other:
-                return True
+        if other in self.successor():
+            return True
         return False
