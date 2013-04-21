@@ -29,7 +29,7 @@ class Person:
                 (gender == 'both' or
                 gender == person.gender) and
                 ((person.mother == self.mother) or
-                (person.father == person.father))):
+                (person.father == self.father))):
                 siblings.append(person)
         return siblings
 
