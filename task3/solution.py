@@ -14,7 +14,7 @@ class Person:
     def __setattr__(self, name, value):
         if (name in ["mother", "father"] and value != None and
             value.birth_year > self.birth_year - 18):
-            raise AttributeError("{} is too young!".format(name))
+                raise AttributeError("{} is too young!".format(name))
         super().__setattr__(name, value)
 
     def __str__(self):
@@ -30,7 +30,7 @@ class Person:
                 gender == person.gender) and
                 ((person.mother == self.mother) or
                 (person.father == self.father))):
-                siblings.append(person)
+                    siblings.append(person)
         return siblings
 
     def get_brothers(self):
@@ -46,7 +46,7 @@ class Person:
                 gender == person.gender) and
                 ((self == person.mother) or
                 (self == person.father))):
-                children.append(person)
+                    children.append(person)
         return children
 
     def successor(self):
