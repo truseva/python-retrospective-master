@@ -55,11 +55,8 @@ class Person:
             for grandchild in child.successor():
                 yield grandchild
 
-    def is_direct_successor(self, other):
-        younger, older = ((self, other)
-                          if self.birth_year > other.birth_year
-                          else (other, self))
-        for person in older.successor():
-            if person == younger:
+    def is_successor(self, other):
+        for person in self.successor():
+            if person == other:
                 return True
         return False
