@@ -1,11 +1,8 @@
-from collections import OrderedDict
-
-
 def groupby(func, seq):
     dictionary = {}
     for element in seq:
         dictionary.setdefault(func(element), []).append(element)
-    return OrderedDict(sorted(dictionary.items()))
+    return dictionary
 
 
 def compose(func1, func2):
