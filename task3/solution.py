@@ -59,3 +59,8 @@ class Person:
         if other in self.successor():
             return True
         return False
+
+    def is_direct_successor(self, child):
+        if child in self.children():
+            return True
+        return False
